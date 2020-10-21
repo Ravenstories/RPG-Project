@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Engine.EventArgs;
+
+namespace Engine.EventArgs
+{
+    public class GameMessagesEventArgs : System.EventArgs
+    {
+        public string Message { get; private set; }
+        public GameMessagesEventArgs (string message)
+        {
+           
+            Message = message;
+        }
+    }
+}
